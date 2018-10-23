@@ -4,7 +4,7 @@ Plugin Name: Inscription
 Plugin URI:
 Description: Plugin d'inscription
 Author: Hugo Ratel
-Version: 1.0
+Version: 0.0.1
 Author URI:
 */
 class UsersManagerPlugin {

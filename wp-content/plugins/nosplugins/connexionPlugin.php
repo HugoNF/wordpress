@@ -9,7 +9,7 @@ class connexionPlugin
 {
     public function __construct()
     {
-        require_once(plugin_dir_path(__FILE__) . '/connexion.php');
+        require_once(plugin_dir_path(__FILE__) . '/connexionWidget.php');
         add_action('widgets_init', function () {
             register_widget('connexionWidget');
         });
