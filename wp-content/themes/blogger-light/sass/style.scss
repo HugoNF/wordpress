@@ -1,0 +1,159 @@
+/*!
+Theme Name: Blogger Light
+Theme URI: https://niteothemes.com/blogger-wordpress-theme/
+Author: NiteoThemes
+Author URI: https://niteothemes.com/
+Description: Blogger Light is clean and minimal blog theme designed for photographers, food lovers, fashion geeks or travel junkies. If you are a Wordpress first timer you will appreciate easy install and one click setup with imported demo content or if you experienced blogger then a switch to new Theme has never been easier. In all cases you will get premium quality, responsivness and complete blog out of a box. Friendly and fast support is bundled as well.
+Version: 1.0.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl.html
+Text Domain: blogger-light
+Tags: two-columns, blog, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, translation-ready
+
+
+This theme, like WordPress, is licensed under the GPL.
+
+Blogger is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+* normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
+* License: MIT
+* Source: https://necolas.github.io/normalize.css/
+
+* FontAwesome 
+* License: MIT License
+* Source: https://fontawesome.com/v4.7.0/
+
+* jquery.imageligthbox.js Copyright (c) 2016 Osvaldas Valutis
+* License: MIT
+* Source: https://github.com/osvaldasvalutis/imageLightbox.js/
+
+* jquery.slicknav.js Copyright (c) 2016 Josh Cope
+* License: MIT
+* Source: https://github.com/ComputerWolf/SlickNav/
+
+* vidim.js Copyright (c) 2016 Ante Sepic
+* License: MIT
+* Source: https://github.com/OriginalEXE/vidim
+
+* slick.js Copyright (c) 2013-2016 by Ken Wheeler
+* License: MIT
+* Source: https://github.com/kenwheeler/slick/
+
+* jquery.isinviewport (c) 2016 by Habib Hadiby
+* License: MIT
+* Source: https://github.com/im4aLL/isInViewport/
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize	
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Layout
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Lightbox
+# Media Queries
+
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content-sidebar";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Lightbox
+--------------------------------------------------------------*/
+@import "modules/lightbox";
+
+/*--------------------------------------------------------------
+# Zoom Instragram
+--------------------------------------------------------------*/
+@import "modules/zoom-instagram";
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@import "modules/media-queries";

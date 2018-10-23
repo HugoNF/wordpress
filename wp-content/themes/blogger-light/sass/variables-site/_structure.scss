@@ -1,0 +1,4 @@
+$size__site-main: 1140px;
+$size__site-sidebar: 300px;
+$size__gutter: 50px;
+$size__site-main-with-sidebar: calc(100% - #{$size__site-sidebar});

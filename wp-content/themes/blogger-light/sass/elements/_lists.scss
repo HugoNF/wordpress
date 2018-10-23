@@ -1,0 +1,40 @@
+ul, ol {
+	margin: 0 0 1.5rem 3rem;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	position: relative;
+}
+
+.entry-content ul li::before {
+	position: absolute;
+    content: '\f046';
+    font-family: fontAwesome;
+    font-size: 0.7em;
+    left: -1.3em;
+    top: 0.4em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5rem;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}

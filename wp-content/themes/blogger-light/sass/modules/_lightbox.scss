@@ -1,0 +1,106 @@
+.lightbox {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.lightbox img {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) , opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#imagelightbox-overlay {
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  display: none;
+}
+
+#imagelightbox {
+  position: fixed;
+  z-index: 3001;
+}
+
+#lightbox-close {
+  position: fixed;
+  z-index: 3002;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#lightbox-close .line {
+  position: absolute;
+  display: block;
+  width: 30px;
+  left: 5px;
+  height: 2px;
+  background: white;
+}
+
+#lightbox-close .line:nth-child(1) {
+  top: 19px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#lightbox-close .line:nth-child(2) {
+  bottom: 19px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.imagelightbox-arrow {
+  display: block;
+  position: fixed;
+  z-index: 3002;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.1);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 3px;
+}
+
+.imagelightbox-arrow-left {
+  left: 10px;
+}
+
+.imagelightbox-arrow-right {
+  right: 10px;
+}
+
+
+.imagelightbox-arrow::before {
+  position: relative;
+  top: 11px;
+  left: 15px;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+
+}
+
+.imagelightbox-arrow-right::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 8px;
+}

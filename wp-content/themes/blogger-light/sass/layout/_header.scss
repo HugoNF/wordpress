@@ -1,0 +1,103 @@
+.site-header {
+	position: relative;
+}
+
+.site-branding {
+	margin: 5em 0;
+	padding: 0 2em;
+	text-align: center;
+	-webkit-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: -webkit-transform 100ms;
+	transition: -webkit-transform 100ms;
+	transition: transform 100ms;
+	transition: transform 100ms, -webkit-transform 100ms;
+}
+
+.logo-over-hero:not(.no-header) .site-branding:not(.no-header) {
+	position: absolute;
+	margin: 0;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link{
+	display: inline-block;
+}
+
+.site-title {
+	margin: 0;
+	font-size: 5em;
+	margin-bottom: 0;
+}
+
+.site-description {
+    font-size: 1.2em;
+    margin-bottom: 0;
+	color: $color__text-light;
+	text-transform: uppercase;
+}
+
+.site-header.sticky {
+	padding-top: 50px;
+}
+
+.header-featured,
+.video-banner {
+	position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-banner > * {
+	z-index: -1!important;
+}
+
+.header-featured::before,
+.video-banner::before {
+	content: "";
+	display: block;
+	padding-top: 25%; 
+}
+
+.video-banner iframe,
+.video-banner video {
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+.yt-header .wp-custom-header {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.wp-custom-header iframe,
+.wp-custom-header img,
+.wp-custom-header video {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+.wp-custom-header iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}

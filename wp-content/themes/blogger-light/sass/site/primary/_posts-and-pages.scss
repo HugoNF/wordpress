@@ -1,0 +1,377 @@
+.site-content {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: $size__site-main;
+	max-width: 100%;
+}
+
+.logo-over-hero .site-content {
+	margin-top: 100px;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry:not(.sticky-post):not(.type-post):not(.type-page) {
+	padding: 0 2em;
+}
+
+.hentry:not(.sticky-post) {
+	margin: 0 0 2.5em;
+	background-color: $color__background-content;
+}
+
+.hentry.single-post {
+	margin: 0;
+	/* border-bottom: 1px solid $color__text-ultralight;*/
+}
+
+.entry-header {
+	padding: 5em 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.post-categories a,
+.entry-meta,
+.entry-meta a {
+	color: $color__text-light;
+}
+
+.post-categories a:first-of-type::before {
+    font-family: fontAwesome;
+    content: "\f115";
+    padding-right: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.posted-on::before {
+    font-family: fontAwesome;
+    content: "\f133";
+    padding-right: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.entry-title {
+	font-size: 3em;
+	margin: 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word
+}
+
+a,
+.related-posts h3 {
+	-webkit-transition: color 300ms ease-in-out;
+	transition: color 300ms ease-in-out;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.entry-content {
+	overflow: hidden;
+	position: relative;
+}
+
+.hover-effect {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: background-color 300ms ease-in-out;
+	transition: background-color 300ms ease-in-out;
+	background-color: rgba(255,255,255, 0);	
+
+	svg {
+		width: 30%;
+    	height: 100%;
+		opacity: 0;
+		-webkit-transition: opacity 300ms ease-in-out;
+		transition: opacity 300ms ease-in-out;
+	}
+
+	path {
+		fill: $color__active;
+	}
+}
+
+article:hover .hover-effect,
+.related-posts a:hover .hover-effect {
+	background-color: rgba(255,255,255, 0.7);	
+}
+
+
+.related-posts a:hover h3,
+.entry-title a:hover {
+	color: $color__active;
+}
+
+article:hover svg,
+.related-posts a:hover svg {
+	opacity: 1;
+}
+
+.page-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.entry-content {
+	margin: 0;
+}
+
+.entry-content > :first-child {
+	margin-top: 0;
+}
+
+.text-paragraph,
+.entry-content > *:not(p):not(figure):not(div) {
+	padding: 0 10%;
+	font-size: 1.2em;
+}
+
+.entry-content > table {
+	margin: 0 10%;
+	width: 80%;
+}
+
+.entry-content {
+	h1 {
+		font-size: 2.5em!important;
+	}
+	h2 {
+		font-size: 2em!important;
+	}
+	h3 {
+		font-size: 1.8em!important;
+	}
+	h4 {
+		font-size: 1.6em!important;
+	}
+	h5 {
+		font-size: 1.5em!important;
+	}
+	h6 {
+		font-size: 1.3em!important;
+	}
+}
+
+.entry-content h1,
+.entry-content:not(.wc-tab) h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	margin: 1em 0 1.5em 0;
+}
+
+.type-post ul li,
+.type-post ol li {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.type-post:not(.sticky-post) {
+	opacity: 0;
+	border: 1px solid rgba(197, 197, 197, 0.41);
+	-webkit-transform: translateY(250px);
+	        transform: translateY(250px);
+	-webkit-transition: opacity 300ms, -webkit-transform 300ms;
+	transition: opacity 300ms, -webkit-transform 300ms;
+	-webkit-transition: opacity 300ms, -webkit-transform 300mss;
+	transition: opacity 300ms, transform 300ms;
+	transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+
+}
+
+.type-post:not(.multi-columns) .entry-footer {
+	margin-top: 3em;
+}
+
+.type-post:not(.multi-columns) .entry-footer.background-color-true {
+	background-color: $color__active;
+	color: $color__background-content;
+	a,
+	a:hover {
+		color: $color__background-content;
+	}
+}
+
+.type-post.in-viewport {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+.entry-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 2em;
+	line-height: 1;
+	/* border-top: dashed 1px $color__text-ultralight;*/
+
+	span {
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+	}
+
+	.edit-link {
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
+		min-width: 100%;
+		padding-left: 1em;
+	}
+}
+
+.tags-links {
+	text-align: center;
+    max-width: 380px;
+}
+
+.tags-links a {
+    display: inline-block;
+	line-height: 2em;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.tags-links a:before {
+	font-family: fontAwesome;
+    content: "\f292";
+    padding-right: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.comments-link {
+	text-transform: uppercase;
+	font-size: 2em;
+
+	a {
+	    padding: 5px;
+	    border-radius: 5px;
+	}
+}
+
+
+.share-container {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	text-align: right;
+}
+
+
+.share-container a {
+	width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.background-color-true .share-container a {
+    background-color: $color__active;
+    color: $color__background-content!important;
+}
+
+.background-color-true .share-container a:hover,
+.background-color-true .tags-links a:hover,
+.background-color-true .comments-link a:hover {
+	background-color: $color__active-hover;
+}
+
+.share-container a:last-of-type{
+	margin-right: 0;
+}
+
+.not-found {
+    margin: 0;
+    margin-bottom: 2em;
+    text-align: center;
+
+    p {
+    	margin: 0;
+    	font-size: 3em;
+    	font-weight: 700;
+    }
+
+    p:first-of-type {
+    	font-size: 14em;
+    }
+}
+
+// search page header
+.page-header.search {
+	padding: 1em;
+    background: #fff;
+    border: 1px solid rgba(197, 197, 197, 0.41);;
+    margin-bottom: 1em;
+
+    h1 {
+	    font-size: 1em;
+	    font-weight: 400;
+    }
+
+    span {
+	    font-weight: 700;
+	    font-size: 1.3em;
+    }
+}
+
+blockquote {
+    padding: 2em;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+blockquote p {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 1em;
+    opacity: .8;
+}
+
+blockquote p::before {
+    font-family: fontAwesome;
+    content: '\f10d';
+    font-size: 1em;
+    line-height: 1em;
+    padding-right: 10px;
+    color: $color__active;
+}
+
+blockquote:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 9%;
+    width: 3px;
+    background-color: $color__active;;
+}
+
+cite {
+	display: block;
+	margin-top: 5px;
+}
+  
+cite:before {
+	content: "\2014 \2009";
+}

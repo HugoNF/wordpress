@@ -1,0 +1,37 @@
+.site-footer {
+	clear: both;
+	background-color: $color__background-footer;
+}
+
+.site-footer *,
+.site-footer a {
+	color: $color__text-footer;
+}
+
+.footer-content	{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: $size__site-main;
+	max-width: 100%;
+	margin: 2em auto;
+}
+
+.copyright-wrapper,
+.back-top-wrapper {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.back-top-wrapper {
+	text-align: right;
+}
+
+.copyright {
+	margin: 0;
+}
+
+#back-to-top i {
+	margin-left: .5em;
+}

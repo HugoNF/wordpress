@@ -1,0 +1,47 @@
+.related-container {
+    margin: 2em 0;
+    padding: 2em;
+	background-color: $color__background-content;
+	border: 1px solid rgba(197, 197, 197, 0.41);
+
+	h2 {
+		text-align: center;
+		padding-top: 1em;
+	}
+}
+
+.related-posts {
+
+	display: -ms-grid;
+	display: grid;
+    grid-gap: 2rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+
+	a {
+	    text-align: center;
+	}
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	span {
+	    font-style: italic;
+	    font-size: .9em
+	}
+
+	.feat-image {
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.feat-image::before {
+		display: block;
+		content: '';
+		padding-top: 75%;
+	}
+
+}

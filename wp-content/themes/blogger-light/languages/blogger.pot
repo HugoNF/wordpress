@@ -1,0 +1,567 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: blogger-light\n"
+"POT-Creation-Date: 2018-07-24 12:40+0200\n"
+"PO-Revision-Date: 2018-05-17 15:37+0200\n"
+"Last-Translator: \n"
+"Language-Team: Niteothemes <info@niteothemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:16
+msgid "404"
+msgstr ""
+
+#: 404.php:17
+msgid "Oops! That page cannot be found!"
+msgstr ""
+
+#: archive.php:60 index.php:70 search.php:42
+msgid "Prev"
+msgstr ""
+
+#: archive.php:61 index.php:71 search.php:43
+msgid "Next"
+msgstr ""
+
+#: comments.php:32 comments.php:48
+msgid "(Edit)"
+msgstr ""
+
+#: comments.php:55
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:87 comments.php:107
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:88 comments.php:108
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:89 comments.php:109
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:131
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:132
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:133
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:134
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:154
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: comments.php:160
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:167
+msgid "Your email address will not be published."
+msgstr ""
+
+#: comments.php:169
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: comments.php:208
+msgid "Processing"
+msgstr ""
+
+#: comments.php:218
+msgid "You are posting too quickly, slow down a bit."
+msgstr ""
+
+#: comments.php:229
+msgid "Thanks for your comment. Reloading Page to display your comment..."
+msgstr ""
+
+#: footer.php:38
+msgid "Proudly powered by "
+msgstr ""
+
+#: footer.php:38
+msgid "WordPress"
+msgstr ""
+
+#: footer.php:40
+#, php-format
+msgid "Theme: %2$s by %1$s."
+msgstr ""
+
+#: functions.php:132
+msgid "Content Full Width Image"
+msgstr ""
+
+#: functions.php:133
+msgid "Full HD Image for Gallery"
+msgstr ""
+
+#: functions.php:134
+msgid "Hero Image"
+msgstr ""
+
+#: functions.php:135
+msgid "Sticky Posts Featured Image"
+msgstr ""
+
+#: functions.php:294
+msgid "Choose or Upload Media"
+msgstr ""
+
+#: functions.php:295
+msgid "Use this media"
+msgstr ""
+
+#: functions.php:382
+msgid "Kirki - Rich Customizer options"
+msgstr ""
+
+#: functions.php:387
+msgid "Instagram Widget by WPZOOM"
+msgstr ""
+
+#: functions.php:424
+msgid ""
+"We recommend to activate all required and recommended plugins. If you are "
+"using Instagram Widget, you need to set it up manually after demo import."
+msgstr ""
+
+#: functions.php:456
+msgid "Before you begin, make sure all the required plugins are activated."
+msgstr ""
+
+#: functions.php:477
+#, php-format
+msgid ""
+"Welcome to Blogger theme by NiteoThemes. For best experience visit our <a "
+"href=\"%s\">welcome page</a>."
+msgstr ""
+
+#: header.php:162
+msgid "Search"
+msgstr ""
+
+#: inc/customizer.php:63
+msgid "Set custom logo size"
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Units in percent of original logo size"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Display Search field in Navigation Menu"
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid "Active Color"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "Site Branding Color"
+msgstr ""
+
+#: inc/customizer.php:218
+msgid "Header Hero Overlay"
+msgstr ""
+
+#: inc/customizer.php:237
+msgid "Footer Background"
+msgstr ""
+
+#: inc/customizer.php:256
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/customizer.php:278
+msgid "Posts footer background color"
+msgstr ""
+
+#: inc/customizer.php:279
+msgid "Applies Active color to posts footer as a background color."
+msgstr ""
+
+#: inc/customizer.php:397
+msgid "Display Back to Top Icon after scrolling"
+msgstr ""
+
+#: inc/customizer.php:422
+msgid "Content width"
+msgstr ""
+
+#: inc/customizer.php:449
+msgid "Full Width Menu"
+msgstr ""
+
+#: inc/customizer.php:470
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:484
+msgid "Site Branding Location"
+msgstr ""
+
+#: inc/customizer.php:499
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Borderless layout"
+msgstr ""
+
+#: inc/customizer.php:524
+msgid "Removes 1px border from all main elements (sidebar, post, ..)"
+msgstr ""
+
+#: inc/customizer.php:550
+msgid "Display Back to Top arrow in Footer area"
+msgstr ""
+
+#: inc/customizer.php:566
+msgid "Back to Top text"
+msgstr ""
+
+#: inc/template-functions.php:279
+msgid "Disable Header Image."
+msgstr ""
+
+#: inc/template-functions.php:281
+msgid "Use Featured image."
+msgstr ""
+
+#: inc/template-functions.php:283
+msgid "Use custom image."
+msgstr ""
+
+#: inc/template-functions.php:300
+msgid "Recommended Header image size is 1920 x 480px."
+msgstr ""
+
+#: inc/template-functions.php:302
+msgid "Upload Media"
+msgstr ""
+
+#: inc/template-functions.php:304
+msgid "Remove custom header image"
+msgstr ""
+
+#: inc/template-tags.php:91
+#, php-format
+msgid "Edit <p class=\"screen-reader-text\">%s</p>"
+msgstr ""
+
+#: inc/theme-welcome.php:18
+msgid "Blogger Welcome"
+msgstr ""
+
+#: inc/theme-welcome.php:27
+#, php-format
+msgid "Congratulations %s,"
+msgstr ""
+
+#: inc/theme-welcome.php:28
+#, php-format
+msgid "Welcome to Blogger %s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:386
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:387
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:388
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: plugins/TGMPA/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search..."
+msgstr ""
+
+#: template-parts/content-full.php:45
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "No posts yet :("
+msgstr ""
+
+#: template-parts/content-sticky-post.php:24
+msgid "Featured post"
+msgstr ""
+
+#: template-parts/related_posts.php:27
+msgid "You Might Also Like.."
+msgstr ""

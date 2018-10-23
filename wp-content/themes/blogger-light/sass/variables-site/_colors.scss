@@ -1,0 +1,16 @@
+$color__background-body: #efefef;
+$color__background-content: #fff;
+
+$color__text-main: #2a2a2a;
+$color__text-light: lighten($color__text-main, 30%);
+$color__text-ultralight: lighten($color__text-main, 60%);
+
+$color__active: #00a28d;
+$color__active-hover: darken($color__active, 10%);
+
+$color__background-footer: #333333;
+$color__text-footer: #ffffff;
+
+$color__background-pre: $color__active;
+$color__background-ins: $color__active;
+$color__background-hr: $color__active;

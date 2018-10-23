@@ -1,0 +1,128 @@
+.sticky-posts-wrapper {
+	padding: 3em;
+	background-color: $color__background-content;
+	margin-bottom: 50px;
+	border: 1px solid rgba(197, 197, 197, 0.41);
+}
+
+.sticky-posts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sticky-post {
+	background: transparent;
+}
+
+
+// li.sticky-post:not(:first-of-type):not(.slick-current) {
+// 	display: none;
+// }
+.sticky-post .feat-header {
+	position: relative;
+	padding: 0;
+}
+
+.sticky-post .entry-feat {
+    display: block;
+    padding-top: 56.25%;
+}
+
+.sticky-post .entry-feat:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+}
+
+.sticky-post .entry-meta {
+	position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1.2em;
+    z-index: 10;
+
+    a {
+    	color: white;
+    }
+
+    p {
+    	margin: 0;
+    }
+
+    p:first-of-type {
+    	position: relative;
+    	font-weight: 700;
+    	text-transform: uppercase;
+    }
+
+    p:nth-of-type(2) a {
+    	position: relative;
+    }
+
+    p:nth-of-type(2) a::after {
+		position: absolute;
+		content: '';
+		height: 1px;
+		background: $color__active;
+		bottom: -15px;
+	    left: 0;
+	    right: 0;
+
+	}
+
+    h3 {
+    	font-size: 3em;
+    }
+}
+
+/* slick navigation*/
+.sticky-posts-wrapper {
+
+	.slick-arrow {
+		background: white;
+		color: black;
+		cursor: pointer;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+
+		i {
+			font-size: 2rem;
+			line-height: 60px;
+		}
+	}
+
+	.slick-prev {
+		transform: translate(-50px, -50%);
+	}
+
+	.slick-next {
+		transform: translate(50px, -50%);
+	}
+}
+
+.slick-slider:hover .slick-arrow {
+    transform: translate(0, -50%);
+}
+
+
+.sticky-posts-wrapper:hover .sticky-post .entry-feat:before {
+	background-color: rgba(0,0,0,0.4);
+}
+
+

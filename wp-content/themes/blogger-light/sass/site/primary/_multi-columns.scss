@@ -1,0 +1,41 @@
+.multi-columns {
+	display: inline-block;
+	margin-bottom: 50px;
+	vertical-align: top;
+	background: $color__background-content;
+
+	.entry-thumbnail {
+		display: block;
+		position: relative;
+		margin: 0;
+	}
+
+	.entry-footer {
+		display: block;
+		line-height: 2em;
+		border: none;
+		text-align: center;
+	}
+
+	.post-categories {
+		font-size: .8em;
+		line-height: 1.5em;
+	}
+
+	.entry-title {
+		font-size: 1.5em;
+	}
+}
+
+.multi-columns.columns-2 {
+	width: calc(50% - 25px);
+}
+
+.multi-columns.columns-3 {
+	width: calc(33.333% - 33px);
+}
+
+
+.multi-columns:nth-child(2) {
+	margin-top: 100px;
+}

@@ -1,0 +1,32 @@
+.post-pagination {
+	text-align: center;
+    margin: 5em 0 1.5em 0;
+}
+
+.page-numbers {
+	margin: 0 0.3em;
+}
+
+.page-numbers.current {
+	display: inline-block;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    color: $color__background-content;
+    background: $color__active;
+}
+
+.page-numbers.next::after,
+.page-numbers.prev::before {
+	font-family: fontAwesome;
+    content: "\f105";
+    padding-left: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page-numbers.prev::before {
+	content: "\f104";
+	padding-right: 5px;
+}

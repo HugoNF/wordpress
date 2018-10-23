@@ -1,0 +1,155 @@
+@media only screen and (max-width : #{$size__site-main}) {
+	.site-content,
+	.main-navigation,
+	.footer-content,
+	 #footer-widgets .textwidget {
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width : 1366px) {
+
+}
+
+
+@media only screen and (max-width : 1024px) {
+	.post-single [id^="gallery-"],
+	.project-single [id^="gallery-"],
+	.gallery.shuffle {
+	    max-width: calc(100% + 10px);
+	    width: calc(100% + 10px);
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+	.fullwidth-img {
+		width: 100%;
+	    margin-left: 0;
+	}
+
+	.text-paragraph,
+	.entry-content .woocommerce {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.site-title {
+		font-size: 3em;
+	}
+
+}
+
+@media only screen and (max-width : 900px) {
+	.with-sidebar .content-area {max-width: 100%; width: 100%; float:none!important;}
+	.sidebar-widget {float:none!important;margin: 3em auto!important;max-width: 100%;}
+}
+
+@media only screen and (max-width : 768px) {
+	.site-title {font-size: 2em;}
+	.main-navigation {display: none;}
+	.slicknav_nav {-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;position: relative;}
+	.slicknav_nav .menu-search {position: absolute; left: 0;top: 0px;}
+	.slicknav_menu {display: block;}
+	.menu-search i {padding: 0; border: none;}
+	.woo-menu-top-container {position: absolute;}
+	.main-menu-container {-webkit-box-flex:2;-ms-flex:2;flex:2; margin: 3em 0 2em 0;padding-top: 2em;border-top: 1px solid #e2e2e2;}
+	.social-menu-top-container {-webkit-box-flex: 2;-ms-flex: 2;flex: 2;position: relative;padding-right: 20px;}
+	.slicknav_nav a.slicknav_row {padding: 0;}
+	.nav-menu li {display: block;}
+	.nav-menu li a {display: inline-block;}
+	.header-featured::before, .video-banner::before {padding-top: 45%;}
+	.slicknav_nav .searchform,
+	.slicknav_nav li:first-of-type a {padding-left: 10px;}
+	.slicknav_nav ul ul {float: none; position: relative; padding-left: 15px;}
+	.gallery-columns-3 .gallery-item,
+	.column.x33,
+	.gallery-columns-4 .gallery-item,
+	.column.x25,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item,
+	.gallery-columns-10 .gallery-item {-webkit-box-flex: 1;flex: 1 0 33.3333%;-webkit-flex: 1 0 33.3333%;-ms-flex: 1 0 30%;}
+	.not-found p:first-of-type {font-size: 10em;}
+	.not-found p {font-size: 2em;}
+	.single-product .entry-summary, .single-product .woocommerce-tabs, .single-product .related.products > h2, #secondary .widget {padding: 2em;}
+}
+
+@media only screen and (max-width : 730px) {
+	.gallery-columns-3 .gallery-item,
+	.column.x33,
+	.gallery-columns-4 .gallery-item,
+	.column.x25,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item,
+	.gallery-columns-10 .gallery-item {-webkit-box-flex: 1;flex: 1 0 50%;-webkit-flex: 1 0 50%;-ms-flex: 1 0 47%;}
+}
+
+
+/*IPHONE 6 Landscape*/
+@media only screen and (max-width : 680px) {
+	html, body, button, input, select, optgroup, textarea {font-size: 15px!important;}
+	.entry-title {font-size: 2em;}
+	.entry-header {padding: 3em;}
+	.sticky-post .entry-meta h3 {font-size: 1.3em; margin:0;margin-top:1em;}
+	.sticky-posts-wrapper {padding: 1.5em;}
+
+}
+
+
+@media only screen and (max-width : 560px) {
+	html, body, button, input, select, optgroup, textarea {font-size: 13px!important;}
+	.site-title {font-size: 1.5em;}
+	.site-description {font-size: 0.9em;}
+	.main-menu-container {margin: 0; padding: 0; margin-top: 20px;}
+	.woo-menu-top-container {position: relative; margin: 0; text-align: center;}
+	.slicknav_nav .searchform {top: 0;}
+	.slicknav_nav ul ul a {width: 100%;}
+	.columns-2 {width: 100%; display: block;}
+	.columns-2:nth-child(2) {margin-top: 0;}
+	.entry-footer, .share-container, .tags-links {display: block;text-align: center; max-width: 100%;}
+	.gallery-columns-2 .gallery-item,
+	.column.x50,
+	.gallery-columns-3 .gallery-item,
+	.column.x33,
+	.gallery-columns-4 .gallery-item,
+	.column.x25,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item,
+	.gallery-columns-10 .gallery-item {-webkit-box-flex: 1;flex: 1 0 100%;-webkit-flex: 1 0 100%;-ms-flex: 1 0 100%;}   
+	.gal-item {	width: calc(100% - 5px)!important;margin-bottom: 10px!important;}
+	.footer-content {-ms-flex-wrap: wrap;flex-wrap: wrap;}
+	.footer-content,
+	.copyright-wrapper,
+	.social-menu-footer,
+	.back-top-wrapper {min-width:100%;text-align: center;padding: 0.5em 0;}
+	.social-menu-footer {-webkit-box-ordinal-group: 1;-ms-flex-order: 0;order: 0;}
+	.back-top-wrapper {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+	.copyright-wrapper {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+	.related.products li {width: calc(50% - 2em);}
+	.related-posts { -ms-grid-columns: 1fr [1]; grid-template-columns: repeat(1, 1fr);}
+	.footer-widgets.columns { -ms-grid-columns: 1fr [1]!important; grid-template-columns: repeat(1, 1fr)!important;}
+	.sticky-post .entry-meta p:first-of-type {margin: 0;}
+}
+
+@media only screen and (max-width : 480px) {
+ .text-paragraph {margin-left: 0;margin-right: 0;}
+}
+
+@media only screen and (max-width : 420px) {
+}
+
+@media only screen and (max-width : 360px) {
+	.related.products li {width: calc(100% - 2em);}
+  
+}
+
+@media only screen and (max-width : 320px) {
+}

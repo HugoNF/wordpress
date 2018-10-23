@@ -1,0 +1,332 @@
+.main-nav-container {
+	border-bottom: 1px solid $color__text-ultralight;
+	background-color: $color__background-content;
+}
+
+.main-nav-container.sticky,
+.no-header.has-sticky-menu .main-nav-container {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.customize-support .main-nav-container.sticky,
+.customize-support.no-header.has-sticky-menu .main-nav-container {
+	top: 30px;
+}
+
+
+.main-navigation,
+.slicknav_nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: $size__site-main;
+	max-width: 100%;
+	margin: 0 auto;
+
+	ul {
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+			background-color: $color__background-content;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+				position: relative;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+	    padding: 0.8em;
+	    font-weight: 500;
+	    font-size: 1.2em;
+	}
+
+	li:first-of-type a {
+		padding-left: 0;
+	}
+
+	li:last-of-type a {
+		padding-right: 0;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+		color: $color__active;
+	}
+}
+
+.slicknav_nav .main-menu-container li {
+    display: block;
+}
+
+.slicknav_arrow {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.main-navigation.full-width-true {
+	width: 100%!important;
+	padding: 0 1em;
+}
+
+
+.main-navigation .menu-item-has-children {
+	padding-right: 8px;
+}
+
+.main-navigation .menu-item-has-children::after {
+    font-family: fontAwesome;
+    content: "\f107";
+	position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+}
+
+.main-navigation .sub-menu {
+	display: none;
+	border: 1px solid $color__text-ultralight;
+	border-top: 2px solid $color__active;
+    margin-top: 10px;
+    -webkit-transition: opacity 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+
+    li {
+    	padding: 0.2em 0.6em;
+    }
+
+}
+
+.main-navigation .sub-menu:before {
+	content: '';
+    display: block;
+    position: absolute;
+    top: -15px;
+    height: 20px;
+    width: 100%;
+}
+
+
+.main-navigation .menu-item-has-children:hover > .sub-menu {
+	display: block;
+    -webkit-animation: slide-up .3s ease-out;
+    -moz-animation: slide-up .3s ease-out;
+}
+
+
+.main-navigation .menu-item-has-children > .sub-menu .menu-item-has-children:hover > .sub-menu {
+	display: block;
+	left: 100%;
+    -webkit-animation: slide-up .3s ease-out;
+    -moz-animation: slide-up .3s ease-out;
+}
+
+.main-navigation .menu-item-has-children > .sub-menu > .sub-menu .menu-item-has-children:hover > .sub-menu {
+	display: block;
+	left: 100%;
+    -webkit-animation: slide-up .3s ease-out;
+    -moz-animation: slide-up .3s ease-out;
+}
+
+@-webkit-keyframes slide-up {
+      0% { opacity: 0; -webkit-transform: translateY(50px); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+.main-navigation .sub-menu a {
+	padding: 0.5em!important;
+}
+
+.main-menu-container {
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+}
+
+/* Social top menu */
+.social-menu-top-container {
+    text-align: right;
+}
+
+/* Search Icon and form in top menu*/
+.menu-search {
+	a {
+		padding-right: 0;
+	}
+
+	i {
+	    border-left: 1px solid $color__active;
+	    padding: 0px 0 3px 8px;
+	}
+	
+}
+
+#search-overlay {
+	position:fixed;
+	width: 100vw;
+	height: 0;
+	background: $color__background-content;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	opacity: 0;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	will-change: transform, opacity;
+	z-index: -1;
+
+  	.input-search {
+		height: 2rem;
+		max-width: 100%;
+		background: transparent;
+		border-width: 0 0 1px 0;
+		border-color: $color__active;
+		color: $color__text-main;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 0 auto;
+		        flex: 1 0 auto;
+		font-size: 2rem;
+		outline: 0;
+		padding: 2rem 1rem;
+		-webkit-appearance: textfield;
+		outline-offset: -2px;
+		border-radius: 0;
+  	}
+
+  	.search-submit {
+  		background: transparent;
+  	}
+  	.search-submit::after {
+		content: '\f002';
+	    font-family: fontAwesome;
+	    background: none;
+	    font-size: 1.5em;
+  	}  	
+}
+
+
+#close-overlay {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+#search-overlay.focus{
+  height: 100vh !important;
+  width: 100vw !important;
+  opacity: 1;
+  z-index: 10000;
+}
+
+
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+.slicknav_menu {
+	display: none;
+
+	.sub-menu {
+		left: 0!important;
+	}
+}
+
+.social-menu-footer {
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+
+    ul {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+    }
+
+    ul li {
+    	display: inline-block;
+    	padding: 0 1em;
+    }
+}
+

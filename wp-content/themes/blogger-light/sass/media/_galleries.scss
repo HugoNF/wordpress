@@ -1,0 +1,133 @@
+[id^="gallery-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1em;
+  margin-right: -10px;
+  margin-bottom: 1.5em;
+
+}
+
+[id^="gallery-"] img {
+  border: none!important;
+}
+
+.entry-content p {
+  overflow: hidden;
+}
+
+.entry-content a {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.entry-content a > img {
+  transform: scale(1);
+  transition: transform 400ms ease;
+}
+
+.entry-content a > img:hover {
+  transform: scale(1.05);
+}
+
+
+[id^="gallery-"] .gallery-item {
+  margin: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+
+.gallery-columns-1 .gallery-item,
+.column.x100 {
+  -webkit-box-flex: 1;
+          flex: 1 0 100%;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+}
+
+
+.gallery-columns-2 .gallery-item,
+.column.x50 {
+  -webkit-box-flex: 1;
+          flex: 1 0 50%;
+  -webkit-flex: 1 0 50%;
+  -ms-flex: 1 0 47%;
+}
+
+
+
+.gallery-columns-3 .gallery-item,
+.column.x33 {
+  -webkit-box-flex: 1;
+          flex: 1 0 33.3333%;
+  -webkit-flex: 1 0 33.3333%;
+  -ms-flex: 1 0 30%;
+
+}
+
+
+.gallery-columns-4 .gallery-item,
+.column.x25 {
+  -webkit-box-flex: 1;
+          flex: 1 0 25%;
+  -webkit-flex: 1 0 25%;
+  -ms-flex: 1 0 21%;
+}
+
+
+.gallery-columns-5 .gallery-item {
+  -webkit-box-flex: 1;
+          flex: 1 0 20%;
+  -webkit-flex: 1 0 20%;
+  -ms-flex: 1 0 15%;
+}
+
+
+.gallery-columns-6 .gallery-item {
+  -webkit-box-flex: 1;
+          flex: 1 0 16.666%;
+  -webkit-flex: 1 0 16.666%;
+  -ms-flex: 1 0 12.666%;
+}
+.gallery-columns-7 .gallery-item {
+    -webkit-box-flex: 1;
+            flex: 1 0 14.2800%;
+  -webkit-flex: 1 0 14.2800%;
+  -ms-flex: 1 0 10.2800%;
+}
+.gallery-columns-8 .gallery-item {
+    -webkit-box-flex: 1;
+            flex: 1 0 12.5%;
+  -webkit-flex: 1 0 12.5%;
+  -ms-flex: 1 0 8.5%;
+}
+.gallery-columns-9 .gallery-item {
+    -webkit-box-flex: 1;
+            flex: 1 0 11.111%;
+  -webkit-flex: 1 0 11.111%;
+  -ms-flex: 1 0 7%;
+}
+.gallery-columns-10 .gallery-item {
+    -webkit-box-flex: 1;
+            flex: 1 0 10%;
+  -webkit-flex: 1 0 10%;
+  -ms-flex: 1 0 6%;
+}
+
+.gallery-caption {
+  display: block;
+}
+
+.wp-block-gallery {
+  margin: 0 -10px;
+}

@@ -1,0 +1,143 @@
+$max: 12;
+$angle: 360/$max;
+$size: 120px;
+
+
+.l-wrapper {
+  display: none;
+  position: relative;
+  max-width: $size*4;
+  height: $size*2.3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.l-wrapper.active {
+  display: block;
+}
+
+svg {
+  height: $size;
+  width: $size;
+  overflow: visible;
+/*   border: 1px solid red; */
+  }
+.g-circles {
+  /*transform: scale(.9) translate(7px, 7px);*/
+  }
+
+@function transform($item: 1){
+  $base: rotate(#{-$angle*$item}deg) translate(5px, 5px);
+  @return $base;
+}
+
+.g--circle {
+  -webkit-transform-origin: $size/2 $size/2;
+          transform-origin: $size/2 $size/2;
+  
+  fill: $color__active;
+  -webkit-animation: opacity 1.2s linear infinite;
+          animation: opacity 1.2s linear infinite;
+  
+  @for $item from 1 through $max {
+    &:nth-child(#{$max}n + #{$item}){
+      -webkit-animation-delay: -#{$item/10}s;
+              animation-delay: -#{$item/10}s;
+      -webkit-transform: transform($item) scale(.9);
+              transform: transform($item) scale(.9);
+    }
+  }
+}
+
+.g-circles--v1 .g--circle {
+  fill-opacity: 0;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  }
+
+
+
+@-webkit-keyframes opacity {
+  3% {
+    fill-opacity: 1;
+  }
+  75% {
+    fill-opacity: 0;
+  }
+  
+}
+
+
+
+@keyframes opacity {
+  3% {
+    fill-opacity: 1;
+  }
+  75% {
+    fill-opacity: 0;
+  }
+  
+}
+
+@-webkit-keyframes opacity-stroke {
+  10% {
+    stroke-opacity: 1;
+  }
+  85% {
+    stroke-opacity: 0;
+  }
+  
+}
+
+@keyframes opacity-stroke {
+  10% {
+    stroke-opacity: 1;
+  }
+  85% {
+    stroke-opacity: 0;
+  }
+  
+}
+
+
+@-webkit-keyframes transform {
+  10% {
+    -webkit-transform-origin: 70px 70px;
+            transform-origin: 70px 70px;
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+    }
+}
+
+@keyframes transform {
+  10% {
+    -webkit-transform-origin: 70px 70px;
+            transform-origin: 70px 70px;
+    -webkit-transform: scale(.75);
+            transform: scale(.75);
+    }
+}
+
+@-webkit-keyframes transform-2 {
+  40% {
+    -webkit-transform: scale(.85) translate(10px,10px);
+            transform: scale(.85) translate(10px,10px);
+    }
+  60% {
+    stroke-width: 20;
+    }
+}
+
+@keyframes transform-2 {
+  40% {
+    -webkit-transform: scale(.85) translate(10px,10px);
+            transform: scale(.85) translate(10px,10px);
+    }
+  60% {
+    stroke-width: 20;
+    }
+}

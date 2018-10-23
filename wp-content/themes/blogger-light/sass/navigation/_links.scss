@@ -1,0 +1,17 @@
+a {
+	text-decoration: none;
+	&:focus,
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.site-footer a {
+	text-decoration: none;
+}
+
+.entry-content a:not(.button) {
+	text-decoration: underline;
+
+}

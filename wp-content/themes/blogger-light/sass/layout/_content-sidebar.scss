@@ -1,0 +1,24 @@
+.with-sidebar .content-area {
+	width: $size__site-main-with-sidebar;
+	max-width: calc(100% - #{$size__gutter} - 300px);
+	float: right;
+}
+
+
+.sidebar-widget {
+	float: left;
+    width: 100%;
+    max-width: $size__site-sidebar;
+    padding: 0;
+    background-color: $color__background-content;
+    border: 1px solid rgba(197, 197, 197, 0.41);
+    
+}
+
+.sidebar-widget.left {
+	margin-right: $size__gutter;
+}
+
+.sidebar-widget.right {
+	margin-left: $size__gutter;
+}
